@@ -141,6 +141,9 @@ A **presentation‑layer SOC dashboard** was built in Splunk Dashboard Studio (d
 | **Threat‑intel enrichment** | Inject open‑source IOCs (e.g., Abuse.ch URLhaus) into Splunk to enrich events with reputation scores. |
 | **Advanced dashboarding** | Add geolocation map of attack sources, risk‑scoring panels, and trend‑analysis visualisations. |
 
----
-
-## Repository Structure
+![AD‑DC01 VM window](ad-dc01.png)
+![Kali attack terminal](kali.png)
+![Splunk indexer VM](splunk-vm.png)
+![Splunk detection snippet](splunk-dash.png)
+![SOC Threat Detection Dashboard](main-dash.png)
+![Evidentiary dashboard](dash1.png)
