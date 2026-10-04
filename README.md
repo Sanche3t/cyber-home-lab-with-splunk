@@ -141,3 +141,15 @@ A **presentation‑layer SOC dashboard** was built in Splunk Dashboard Studio (d
 | **Threat‑intel enrichment** | Inject open‑source IOCs (e.g., Abuse.ch URLhaus) into Splunk to enrich events with reputation scores. |
 | **Advanced dashboarding** | Add geolocation map of attack sources, risk‑scoring panels, and trend‑analysis visualisations. |
 
+
+## 👨‍💻 Author
+
+**Sancheet Pawar**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Sanche3t-181717?logo=github)](https://github.com/Sanche3t)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sancheet%20Pawar-0077B5?logo=linkedin)](https://linkedin.com/in/sancheet-pawar)
+
+---
+
+⭐ If you found this project helpful, please give it a star!
+
