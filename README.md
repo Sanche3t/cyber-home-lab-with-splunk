@@ -30,7 +30,7 @@ The goal of this project is to **design, build, and validate** an end‑to‑end
 * **Duration:** 8 weeks (June – August 2026)
 * **Outcome:** Fully functional lab, Splunk‑based SOC dashboard, technical report, and a demonstrable skill set for SOC/VAPT internships or entry‑level security roles.
 
-![AD‑DC01 VM](images/ad-dc01.png)
+![AD‑DC01 VM](ad-dc01.png)
 *Figure 1 – AD‑DC01 Windows Server 2019 Core domain controller (lab.local).*
 
 ---
@@ -57,7 +57,7 @@ The goal of this project is to **design, build, and validate** an end‑to‑end
   * SPL (`stats`, `timechart`, `eval`/`case`) for event correlation
   * Dashboard Studio & Classic Dashboard for evidentiary and SOC‑style views
 
-![Splunk VM](images/splunk-vm.png)
+![Splunk VM](splunk-vm.png)
 *Figure 2 – Splunk Enterprise indexer running on Ubuntu.*
 
 ---
@@ -73,7 +73,7 @@ The lab is built on a **VMware host‑only network (VMnet1, 192.168.136.0/24)** 
 | **Splunk Indexer** | Ubuntu 22.04 LTS – Splunk Enterprise | 192.168.136.129 | Indexes, stores, and searches logs |
 | **Kali Linux** | Offensive Security Kali – Attacker platform | 192.168.136.130 | Executes reconnaissance, credential brute‑force, privilege escalation, lateral movement |
 
-![Lab diagram (AD‑DC01, Splunk VM, Kali)](images/ad-dc01.png)
+![Lab diagram (AD‑DC01, Splunk VM, Kali)](ad-dc01.png)
 *Figure 3 – High‑level view of the isolated lab network (all three VMs on VMnet1).*
 
 ---
@@ -98,10 +98,10 @@ The lab is built on a **VMware host‑only network (VMnet1, 192.168.136.0/24)** 
 
 *All events are captured, indexed, and made available for correlation and dashboard visualisation.*
 
-![Kali attack terminal](images/kali.png)
+![Kali attack terminal](kali.png)
 *Figure 4 – Kali terminal showing the credential brute‑force output (fail‑fail‑success).*
 
-![Splunk detection snippet](images/splunk-dash.png)
+![Splunk detection snippet](splunk-dash.png)
 *Figure 5 – Splunk search/table displaying the five key events (4625, 4625, 4624, 4728, 4688) with timestamps.*
 
 ---
@@ -115,10 +115,10 @@ A **presentation‑layer SOC dashboard** was built in Splunk Dashboard Studio (d
 * **Top‑Attacker table** – Breaks down failed/successful authentications by source IP (highlights Kali’s IP).
 * **Event‑Summary table** – Deduplicated, stage‑by‑stage narrative (event type, first timestamp, count).
 
-![SOC Threat Detection Dashboard](images/main-dash.png)
+![SOC Threat Detection Dashboard](main-dash.png)
 *Figure 6 – SOC‑style dashboard showing KPIs, timeline, top attacker, and event summary.*
 
-![Additional dashboard view](images/dash1.png)
+![Additional dashboard view](dash1.png)
 *Figure 7 – Evidentiary dashboard (Classic) with failed‑logon timechart and source/account breakdown.*
 
 ---
@@ -141,9 +141,3 @@ A **presentation‑layer SOC dashboard** was built in Splunk Dashboard Studio (d
 | **Threat‑intel enrichment** | Inject open‑source IOCs (e.g., Abuse.ch URLhaus) into Splunk to enrich events with reputation scores. |
 | **Advanced dashboarding** | Add geolocation map of attack sources, risk‑scoring panels, and trend‑analysis visualisations. |
 
-![AD‑DC01 VM window](ad-dc01.png)
-![Kali attack terminal](kali.png)
-![Splunk indexer VM](splunk-vm.png)
-![Splunk detection snippet](splunk-dash.png)
-![SOC Threat Detection Dashboard](main-dash.png)
-![Evidentiary dashboard](dash1.png)
